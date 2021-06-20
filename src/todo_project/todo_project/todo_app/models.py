@@ -29,9 +29,9 @@ class Category(models.Model):
 
 
 class Todo(models.Model):
-    text = models.CharField(max_length=30)
+    title = models.CharField(max_length=30)
     state = models.BooleanField(default=False)
     description = models.TextField(null=True, blank=True)
-    owner = models.ForeignKey(Person, on_delete=models.CASCADE, null=True)
+    # owner = models.ForeignKey(Person, on_delete=models.CASCADE, null=True)
     categories = models.ManyToManyField(Category)
 

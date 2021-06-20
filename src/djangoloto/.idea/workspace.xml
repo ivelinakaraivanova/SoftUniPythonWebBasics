@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c564145e-c8be-4f85-95e4-2f6e922fdfce" name="Default Changelist" comment="" />
+    <list default="true" id="c564145e-c8be-4f85-95e4-2f6e922fdfce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/forms_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoloto/cities/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoloto/cities/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoloto/cities/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoloto/cities/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,10 +91,22 @@
       <workItem from="1622807154013" duration="12913000" />
       <workItem from="1622833562059" duration="14585000" />
       <workItem from="1623093044353" duration="2008000" />
+      <workItem from="1623916818993" duration="2642000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
