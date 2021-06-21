@@ -1,5 +1,7 @@
 from django.db import models
 
+from todo_project.todo_app.validators import validate_dot
+
 
 class Person(models.Model):
     name = models.CharField(max_length=30)
@@ -29,9 +31,14 @@ class Category(models.Model):
 
 
 class Todo(models.Model):
-    title = models.CharField(max_length=30)
+    title = models.CharField(
+        max_length=30,
+        validators=[
+            validate_dot,
+        ]
+    )
     state = models.BooleanField(default=False)
     description = models.TextField(null=True, blank=True)
-    # owner = models.ForeignKey(Person, on_delete=models.CASCADE, null=True)
+    owner = models.ForeignKey(Person, on_delete=models.CASCADE, null=True)
     categories = models.ManyToManyField(Category)
 
