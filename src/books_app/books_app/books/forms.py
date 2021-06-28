@@ -42,11 +42,11 @@ class AuthorForm(forms.ModelForm, BootstrapFormMixin):
         self._init_bootstrap()
 
     # def save(self, commit=True): # if we want to use already created author
-    #     db_author = Author.objects.filter(name=self.instance.name). first()
+    #     db_author = Author.objects.filter(name=self.instance.name).first()
     #     if db_author:
-    #         return db_author # if there is such author - return it
+    #         return db_author # if there is a such author - return it
     #     else:
-    #         return super().self(commit) # if there isn't such author - create it
+    #         return super().self(commit) # if there isn't a such author - create it
     class Meta:
         model = Author
         fields = '__all__'
