@@ -1,12 +1,18 @@
 from django import forms
 
+from notes_app.common.forms_labels_suffix import BaseModelForm
 from notes_app.notes.models import Note
 
 
-class NoteForm(forms.ModelForm):
+class NoteForm(BaseModelForm):
     class Meta:
         model = Note
-        fields = '__all__'
+        fields = ['title', 'content', 'image_url']
+        labels = {
+            'title': 'Title',
+            'content': 'Content',
+            'image_url': 'Link to Image'
+        }
 
 
 class CreateNoteForm(NoteForm):
